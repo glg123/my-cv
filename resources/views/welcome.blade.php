@@ -998,7 +998,7 @@
         $.ajax({
             url: '{{route('contact')}}',
             data: data,
-            type: 'POST',
+            type: 'GET',
             success: function (data) {
                 // For Notification
                 document.getElementById("formmail").reset();
