@@ -20,5 +20,4 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::post('contact', [UsersController::class, 'contact'])->name('contact');
-Route::get('contact', [UsersController::class, 'contact'])->name('contact');
+Route::post('contact', [UsersController::class, 'contact'])->name('contact');
