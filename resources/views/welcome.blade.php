@@ -979,7 +979,7 @@
 <script>
     $( '#formmail' ).submit(function ( e ) {
 
-       alert(111);
+
 
 
         var data = {
@@ -1011,6 +1011,7 @@
                     $alertDiv.find('.mailResponseText').text(data.message);
                 } else {
                     $alertDiv.find('.alert').addClass('alert-success');
+                    $alertDiv.find('.mailResponseText').text('Email Sent');
                 }
             }
         });
